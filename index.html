@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="home-wrapper">
+      <div class="label-thin">Your reliable agency partner</div>
+      <div class="label-bold">
+        The fast lane to digital branding without compromise
+      </div>
+      <div class="button-row">
+        <button class="get-started-button">
+          <font class="button-label">GET STARTED</font>
+        </button>
+        <div class="learn-more-wrapper">
+          <div class="learn-more-icon">
+            <img src="assets/icons/arrow-right-top.svg" />
+          </div>
+          <div class="learn-more-text-wrapper">
+            <font class="learn-more-text">LEARN MORE</font>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image-slide-show-whole-wrapper">
+      <div class="image-slide-show-wrapper">
+        <div class="image-slide-container">
+          <div class="image-slide-track" speed="30" direction="left">
+            <div
+              class="image-slide"
+              style="background-image: url(./assets/img/slide_1.png)"
+            ></div>
+            <div
+              class="image-slide"
+              style="background-image: url(./assets/img/slide_2.png)"
+            ></div>
+            <div
+              class="image-slide"
+              style="background-image: url(./assets/img/slide_3.png)"
+            ></div>
+            <div
+              class="image-slide"
+              style="background-image: url(./assets/img/slide_1.png)"
+            ></div>
+            <div
+              class="image-slide"
+              style="background-image: url(./assets/img/slide_2.png)"
+            ></div>
+            <div
+              class="image-slide"
+              style="background-image: url(./assets/img/slide_3.png)"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image-slide-text-wrapper">
+      <p class="image-slide-text">
+        We’re eliminating the roadblocks in product development for marketing
+        and commerce, connecting you to efficient, sustainable and custom
+        quality work.
+      </p>
+    </div>
+    <div class="footer-row-wrapper">
+      <div class="footer-row">
+        <div class="footer-item">
+          <img src="./assets/icons/webflow.svg" />
+          <p class="footer-item-text">Webflow</p>
+        </div>
+        <div class="footer-item">
+          <img src="./assets/icons/webflow.svg" />
+          <p class="footer-item-text">Webflow</p>
+        </div>
+        <div class="footer-item">
+          <img src="./assets/icons/webflow.svg" />
+          <p class="footer-item-text">Webflow</p>
+        </div>
+        <div class="footer-item">
+          <img src="./assets/icons/webflow.svg" />
+          <p class="footer-item-text">Webflow</p>
+        </div>
+        <div class="footer-item">
+          <img src="./assets/icons/webflow.svg" />
+          <p class="footer-item-text">Webflow</p>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const slide_track = document.querySelector(".image-slide-track");
+        const speed = slide_track.getAttribute("speed");
+        const direction = slide_track.getAttribute("direction");
+        if (speed)
+          slide_track.style.animation = `marquee ${speed}s linear infinite`;
+        if (direction) {
+          if (direction === "right") {
+            document.documentElement.style.setProperty(
+              "--animation-slide-from",
+              "-50%"
+            );
+            document.documentElement.style.setProperty(
+              "--animation-slide-to",
+              "0"
+            );
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

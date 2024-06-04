@@ -1,0 +1,57 @@
+/* tokens.css */
+
+/* Colors */
+:root {
+  --color-primary: #542d58;
+  --color-secondary: #613465;
+  --color-background: #ffffff;
+  --color-footer-divider: #eee1ef;
+}
+
+/* Font Families */
+:root {
+  --font-family-helvetica-display: "Helvetica_Display", sans-serif;
+}
+
+/* Font Sizes */
+:root {
+  --font-size-xxl: 84.17px;
+  --font-size-xl: 70px;
+  --font-size-lg: 25px;
+  --font-size-md: 20px;
+  --font-size-sm: 15px;
+  --font-size-xs: 10px;
+}
+
+/* Line Heights */
+:root {
+  --line-height-xxl: 90px;
+  --line-height-xl: 35px;
+  --line-height-lg: 28px;
+  --line-height-md: 21px;
+}
+/* Spacing */
+:root {
+  --spacing-xxs: 12px;
+  --spacing-xs: 16px;
+  --spacing-sm: 20px;
+  --spacing-md: 30px;
+  --spacing-lg: 50px;
+  --spacing-xl: 60px;
+  --spacing-xxl: 120px;
+  --spacing-marquee: 20px;
+}
+
+/* Border Radius */
+:root {
+  --border-radius: 30px;
+  --border-radius-full: 9999px;
+}
+
+/* Animation */
+:root {
+  --animation-slide-from: 0;
+  --animation-slide-to: -50%;
+  --animation-duration: 200ms;
+  --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
