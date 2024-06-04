@@ -26,6 +26,7 @@
     <div class="image-slide-show-whole-wrapper">
       <div class="image-slide-show-wrapper">
         <div class="image-slide-container">
+          <!-- Can change the speed and the direction of the marquee -->
           <div class="image-slide-track" speed="30" direction="left">
             <div
               class="image-slide"
@@ -96,6 +97,7 @@
         if (speed)
           slide_track.style.animation = `marquee ${speed}s linear infinite`;
         if (direction) {
+          //The default direction is left, so only check if the direction is right
           if (direction === "right") {
             document.documentElement.style.setProperty(
               "--animation-slide-from",
